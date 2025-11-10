@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Reemplaza la URL con la de tu instancia de Strapi
-    axios.get('http://localhost:1337/api/messages')
+    axios.get('https://worthy-wisdom-8a25876352.strapiapp.com/api/messages')
       .then(response => {
         setMessage(response.data.data[0].HelloWorld);
       })
